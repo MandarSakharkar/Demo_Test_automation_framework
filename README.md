@@ -1,5 +1,12 @@
-# Bugweisers
+# Demo Test automation framework
 
-Testing Hackathon
+A framework used for test hackathon
 
-changing readme
+Tech stack
+Java
+Spring
+Gradle
+Selenium
+Rest Template
+Cucumber
+ExtentReports
