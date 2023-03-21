@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceCompatibility = 1.8
+
+
+ext {
+    lombokVersion = '1.18.4'
+}
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    testCompileOnly("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+    compile group: 'io.qameta.allure', name: 'allure-spring-boot', version: '2.9.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-6'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.3.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.4.RELEASE'
+    compile group: 'net.masterthought', name: 'cucumber-reporting', version: '5.3.1'
+    compile group: 'io.cucumber', name: 'cucumber-junit', version: '6.8.1'
+    compile group: 'io.cucumber', name: 'cucumber-core', version: '6.8.1'
+    compile group: 'io.cucumber', name: 'gherkin', version: '15.0.2'
+    compile group: 'io.cucumber', name: 'cucumber-java', version: '6.8.1'
+    compile group: 'io.cucumber', name: 'cucumber-java8', version: '6.8.1'
+    compile group: 'io.cucumber', name: 'cucumber-spring', version: '6.8.1'
+    compile group: 'com.aventstack', name: 'extentreports', version: '5.0.4'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.0.0'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    compile group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.5.0.RELEASE'
+    compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '3.0.3'
+    compile group: 'io.cucumber', name: 'cucumber-jvm', version: '6.8.1', ext: 'pom'
+    compile group: 'io.cucumber', name: 'cucumber-jvm-deps', version: '1.0.6'
+    compile group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+
+
+
+
+
+
+}
+test {
+    useJUnitPlatform()
+}

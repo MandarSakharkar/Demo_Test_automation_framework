@@ -1,0 +1,3 @@
+yaml:
+base.url:
+ covid19: https://data.covid19india.org/
