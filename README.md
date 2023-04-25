@@ -10,3 +10,4 @@ A framework used for test hackathon
 * Rest Template
 * Cucumber
 * ExtentReports
+* Appium
