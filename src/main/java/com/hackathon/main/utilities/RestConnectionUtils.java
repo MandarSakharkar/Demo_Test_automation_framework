@@ -74,8 +74,6 @@ public class RestConnectionUtils {
         httpHeaders = responseEntity.getHeaders();
         logger.info("The response headers: {}", httpHeaders);
         testContext.setContext("RestParams",restParameters);
-
-
     }
 
     public void postRequest() {

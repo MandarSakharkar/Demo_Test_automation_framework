@@ -4,4 +4,13 @@ api: true
 browser: chrome
 Mobile: false
 device.name : Samsung
-
+appium:
+  url: http://127.0.0.1:4723/wd/hub
+  platformName: Android
+  automationName: UIAutomator2
+  app: /src/main/resources/androidapps/counter.apk
+  udid: emulator-5554
+  deviceName: Pixel 6 Pro API 33
+  appPackage: me.tsukanov.counter
+  appActivity: me.tsukanov.counter.ui.MainActivity
+  uiautomator2ServerInstallTimeout: 60000

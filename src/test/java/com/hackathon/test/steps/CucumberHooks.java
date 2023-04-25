@@ -1,6 +1,7 @@
 package com.hackathon.test.steps;
 
 import com.hackathon.main.utilities.ScreenshotService;
+import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
@@ -32,6 +33,9 @@ public class CucumberHooks {
     @After
     public void tearDown() {
         this.context.getBean(WebDriver.class).quit();
+        if(this.context.containsBean(String.valueOf(AndroidDriver.class))) {
+            this.context.getBean(AndroidDriver.class).quit();
+        }
     }
 }
 

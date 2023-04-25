@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         stepNotifications = true,
         plugin = {"com.hackathon.main.Hooks.CustomReportListener", "pretty",
                 "html:target/cucumber-html-reports/cucumber.html","json:target/cucumber.json", "rerun:target/failed_scenarios.txt"},
-        monochrome = true,tags = "@Covid19"
+        monochrome = true
 )
 public class TestRunner {
 
